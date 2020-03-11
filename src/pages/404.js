@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './404.module.css';
+import styles from './404.module.scss';
 
 export default () => (
-    <div>
-        <h1>Page not found</h1>
+    <div className={styles.content}>
+        <h1 className={styles.header}>Page not found</h1>
         
-        <p>
+        <p className={styles.errorMessage}>
             The page you are looking for does not exists.
         </p>
     </div>
